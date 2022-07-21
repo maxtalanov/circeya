@@ -4,7 +4,7 @@ const Footer = () => {
 
     return (
         <footer className="footer">
-            <p className="footer__corping">&copy;Тест, 1022-{new Date().getFullYear()}</p>
+            <p className="footer__copyright">&copy; TEST, 1022&#8211;{new Date().getFullYear()}</p>
         </footer>
     )
 }
