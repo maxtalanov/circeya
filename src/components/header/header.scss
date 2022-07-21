@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 262px;
+  background: linear-gradient(0deg, #464341 0%, #010101 100%);
+  max-width: 100%;
+  min-height: 100px;
+
+  &__logo {
+
+  }
+}
