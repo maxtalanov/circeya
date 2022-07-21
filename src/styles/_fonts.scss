@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "OrchideaPro-Medium";
+  font-display: swap;
+  src: url(../fonts/OrchideaPro-Medium.ttf);
+}
+
+@font-face {
+  font-family: "OrchideaPro-MediumItalic";
+  font-display: swap;
+  src: url(../fonts/OrchideaPro-MediumItalic.ttf);
+}
+
+
+@font-face {
+  font-family: 'Manrope';
+  src:
+          url('../fonts/Manrope-Medium.woff2') format('woff2'),
+          url('../fonts/Manrope-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src:
+          url('../fonts/Manrope-Bold.woff2') format('woff2'),
+          url('../fonts/Manrope-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
