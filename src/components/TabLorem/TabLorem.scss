@@ -1,0 +1,48 @@
+@import "../../styles/_mixin";
+
+.lorem {
+  width: 85%;
+  padding: 0 0 222px 262px;
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 12%;
+    margin-bottom: 88px;
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__container {
+    &:nth-child(1) {
+      width: 36%;
+    }
+    &:nth-child(2) {
+      width: 52%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+
+  &__text {
+    @include font("Manrope", normal, 500, 18px, 130%, #141414);
+    margin-top: 24px
+  }
+}
