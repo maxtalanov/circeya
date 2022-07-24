@@ -1,15 +1,20 @@
 import "./Madal.scss";
 
 const Modal = ({children, active, setActive}) => {
+
+    const onClickBtnExit = () => {
+        console.log('click')
+      setActive(false);
+    }
+
     return (
         <section
             className={active ? 'modal modal__active' : 'modal'}
-            onClick={() => setActive(false)}
         >
-            <button className="modal__btn-exit" />
+            <button className="modal__btn-exit" onClick={() => setActive(false)} />
+
             <div
                 className={active ? 'modal__content modal__content-active' : 'modal__content'}
-                onClick={e => e.stopPropagation()}
             >
                 {children}
             </div>

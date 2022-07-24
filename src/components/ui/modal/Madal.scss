@@ -14,7 +14,6 @@
 
   &__active {
     opacity: 1;
-    pointer-events: all;
   }
 
   &__content {
@@ -22,7 +21,7 @@
     height: 100%;
     padding: 9% 16% 0 16%;
     transform: scale(0.5);
-    transition: 0.2s all;
+    transition: 0.2s;
 
   }
 
@@ -31,6 +30,7 @@
   }
 
   &__btn-exit {
+    pointer-events: auto;
     cursor: pointer;
     position: absolute;
     top: 24px;
