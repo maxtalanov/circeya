@@ -1,0 +1,21 @@
+@import "../../../styles/_mixin";
+
+.navbar {
+  width: 100%;
+  padding: 82px 262px 114px 262px;
+  &__list{
+    display: flex;
+
+    gap: 0 55px;
+  }
+
+  &__el {
+    @include font("Manrope", normal, 700, 36px, 100%, #141414);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  &__el_active_border {
+    border-bottom: 5px solid #141414;
+  }
+}
