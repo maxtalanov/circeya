@@ -1,0 +1,16 @@
+@import "../../../styles/_mixin";
+
+.typography {
+  text-transform: uppercase;
+
+  &__h1 {
+    @include font("OrchideaPro-MediumItalic", normal, 500, 64px, 110%, #141414);
+  }
+  &__h2 {
+    @include font("OrchideaPro-Medium", normal, 500, 48px, 110%, #141414);
+  }
+  &__h3 {}
+  &__h4 {}
+  &__h5 {}
+  &__h5 {}
+}
