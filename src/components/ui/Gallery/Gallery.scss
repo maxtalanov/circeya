@@ -1,0 +1,89 @@
+.gallery {
+
+  &__list {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    overflow: hidden;
+  }
+
+  &__bg-list {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0.05) 100%);
+    z-index: 1;
+
+    &_type_left {
+      left: 0;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      padding: 0 0 0 360px;
+    }
+
+    &_type_right {
+      right: 0;
+      padding: 0 360px 0 0;
+    }
+  }
+
+  &__figure {
+    transition: .1s;
+    width: 360px;
+    height: 550px;
+    position: relative;
+  }
+
+  &__el-img {
+
+  }
+
+  &__el-caption {
+    max-widthx: 100%;
+    min-height: 145px;
+    padding: 34px 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #141414;
+    opacity: 0.5;
+  }
+
+  &__btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 142px;
+    padding: 64px 0 114px 0;
+  }
+
+  &__btn{
+    width: 32px;
+    height: 32px;
+    transform: scale(1);
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.5;
+
+    }
+
+    &:disabled {
+      opacity: 1;
+      pointer-events: none;
+    }
+
+    &:active {
+      transform: scale(0.8);
+    }
+
+    &_type_left {
+      background: url("../../../assets/btn/btn-left__dark.svg") no-repeat center;
+    }
+
+    &_type_right {
+      background: url("../../../assets/btn/btn-right__dark.svg") no-repeat center;
+    }
+  }
+
+}
